@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="chikens.html">
+        <input type="text" placeholder="se">
+        <input type="range">
+    </form>
+    <div>
+        <form action="chikens.html">
+            <label for="cheese">チーズ</label>
+            <input type="checkbox" id="cheese" name="query" value="username">
+            <label for="cake">チーズ</label>
+            <input type="checkbox" id="cake" name="cake" value="true">
+            <button>送信</button>
+        </form>
+    </div>
+    <h2>バリデーション</h2>
+    <form action="dummy">
+        <label for="first">名前</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="last">名字</label>
+            <input type="text" name="last" id="last" minlength="2">
+        </p>
+        <button>送信</button>
+    </form>
+    
+</body>
+</html>
