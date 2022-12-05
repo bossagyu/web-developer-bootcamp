@@ -1,3 +1,11 @@
+h1 {
+    text-align: center;
+    font-weight: normal;
+    text-decoration: underline wavy orange;
+    letter-spacing: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    
 h2 {
     color: rgb(108,175,0);
     background-color: plum;
@@ -9,6 +17,10 @@ button {
 }
 
 p {
-    color: olive;
-    background: rgb(182, 133, 41);
+    color: white;
+    background: black;
+    line-height: 2;
+}
+a {
+    text-decoration: none;
 }
