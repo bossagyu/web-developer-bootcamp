@@ -1,14 +1,20 @@
 body {
     background-color: #e9edc9;
 }
+
 #signup {
     background-color: black;
 }
 .tag {
     background-color: #d4a373;
-
+}
+button:hover {
+    background-color: black;
 }
 
 .post a {
     color: #d4a373;
+}
+li>a:nth-last-of-type(1){
+    color: red;
 }
