@@ -1,0 +1,59 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+.midle {
+    background-color: chartreuse;
+}
+
+#static .midle {
+    position: static;
+}
+
+#relative .midle {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+#absolute {
+    position: relative;
+}
+
+/* 祖先のポジションからの絶対位置で決まる */
+#absolute .midle {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+/* 見えている部分からの相対位置に居続ける */
+#fixed .midle {
+    position: fixed;
+    top: 1px;
+    left: 1px;
+}
+
+
+#section-one {
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.5;
+}
