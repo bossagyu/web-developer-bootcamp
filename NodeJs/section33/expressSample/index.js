@@ -31,6 +31,12 @@ app.get('/r/:animal/:postId', (req, res) => {
     res.send(`${animal}のページの${postId} です`);
 })
 
+app.get('/search', (req, res) => {
+    console.log(req.query);
+    const {q} = req.query;
+    res.send(`${q}`);
+})
+
 app.get('*', (req, res) => {
     res.send('そんなパスはありません');
 })
