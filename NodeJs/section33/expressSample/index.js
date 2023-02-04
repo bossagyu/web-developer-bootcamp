@@ -25,6 +25,11 @@ app.get('/', (req, res) => {
     res.send('home');
 })
 
+app.get('/r/:animal', (req, res) => {
+    console.log(req.params)
+    res.send(`${req.params.animal}のページです`);
+})
+
 app.get('*', (req, res) => {
     res.send('そんなパスはありません');
 })
