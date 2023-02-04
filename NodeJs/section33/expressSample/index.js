@@ -25,9 +25,10 @@ app.get('/', (req, res) => {
     res.send('home');
 })
 
-app.get('/r/:animal', (req, res) => {
+app.get('/r/:animal/:postId', (req, res) => {
+    const { animal, postId } = req.params;
     console.log(req.params)
-    res.send(`${req.params.animal}のページです`);
+    res.send(`${animal}のページの${postId} です`);
 })
 
 app.get('*', (req, res) => {
