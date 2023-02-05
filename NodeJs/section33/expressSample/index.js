@@ -38,7 +38,7 @@ app.get('/search', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-    res.send('そんなパスはありません');
+    res.send('そんなパスはあせん');
 })
 
 app.listen(3000, () => {
