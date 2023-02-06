@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>ランダムな値: <%= random %> </h1> 
-    <% if (random % 2 === 0) { %>
-        偶数
-    <% } %>
+    <h1>猫たち</h1>    
+    <ul>
+        <% for(let cat of cats) { %>
+            <li><%= cat %></li>
+        <% } %>
+    </ul>
 </body>
 </html>
